@@ -13,7 +13,19 @@ Alter the code so that it is reproducible. Describe the changes you made to the 
 # Author: YOUR NAME
 
 ```
-Please write your explanation here...
+1. random subset of people were infected
+infected_indices = np.random.choice(ppl.index, size=int(len(ppl) * ATTACK_RATE), replace=False)
+the sampling frame is the dataframe with all the peoples, separated by wedding or brunch (ppl.index, each individual has a unique index number and clustered based on attended a wedding or a brunch). Sampling randomly with the np.random.choice from a uniform distribution (without replacement). The sampling size is 10% infected (attack_rate). 
+These relate to the blog post section on 10% chance of being infected, so on average 10% of the population is infected.
+
+2. randomly decide which infected people are traced
+ppl.loc[ppl['infected'], 'traced'] = np.random.rand(sum(ppl['infected'])) < TRACE_SUCCESS
+the sampling frame is all the infected people from the previous sampling event. np.random.rand sampling randomly within the infected subset. Uniform without replacement still. The sampling size is trace_success = 20% of infected people. 
+These relate to the blog post section on contact tracing, but the way we did it is independent of the event. which is why our graph looks more representative of all the infections, unlike the blog post. 
+
+The code does not reproduce the graphs from the original blog post as the frequency of infections from weddings is higher in the code than in the blog post, and it has a smaller variance.
+
+When the simulations are decreased to 100, its less reproducible (law of numbers from the lectures). I increased the number of iterations to 100,000. This made the graph reproducible due to the law of large numbers, we're more likely to get the true average of the population the more averages we take (more repetitions).
 
 ```
 
