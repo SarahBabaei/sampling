@@ -40,30 +40,28 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 
 ## Part A - Survey Design: 
 
-The number of your chosen topic: `#`
+The number of your chosen topic: `1`
 
 Describe the purpose of your survey:
-```
-write your answer here...
-```
+The purpose of my survey is to determine the reason why there is a high turnover rate in lower tier employee positions. Secondarily, this survey aims to determine specifically what employees would want to improve employee satisfaction at the company. 
 
 Describe your target population, sampling frame, sampling units, and observational units:
-```
-write your answer here...
-```
+My target population would be entry and lower level positions in the specific departments that have the highest turnover rates, including those that have left the company (perhaps in the last 6 months or however long this 'high' turnover rate has been happening). The sampling frame would be the employee database. The sampling units would all current emplyees and those that had left while the turnover rate was high. The sampling units would be through email (we are a tech company so I assume they can use email). The observational units would be randomly sampled in a stratified manner from current (and separately) from those that had left. 
 
 Your 5-10 question survey:
 ```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
-6. write your question here... (optional)
-7. write your question here... (optional)
-8. write your question here... (optional)
-9. write your question here... (optional)
-10. write your question here... (optional)
+This survey was inspired by the survey that my undergraduate university recently sent out about alumni satisfaction.
+For questions 1-7, rank how you feel about each statement from 1-5, where 1 is strongly disagree and 5 is strongly agree.
+1. I feel that I have a good work-life balance. 
+2. I recieve adequate support and training to finish my assigned tasks.
+3. I am satisfied with the opportunities for career growth and advancement.
+4. I feel that adequately compensated for my work.
+5. I feel that my work is valued at this company. 
+6. I feel comfortable raising concerns to my manager.
+7. My coworkers make me feel welcome.
+8. What is/was the biggest factor contributing to your decicision to stay at/leave the company? (short answer, open ended)
+9. What changes would make you want to stay with the company long term? (short answer, open ended)
+10. Do you have any other suggestions to improve our employee experience? (short answer, open ended)
 ```
 
 ## Part B - Survey Evaluation:
@@ -71,7 +69,19 @@ Your 5-10 question survey:
 Identify and describe survey features:
 
 ```
-write your answer here
+1. Sample type: cross-sectional design, stratified sampling at the provincial AND census metro area (CMA).
+2. Sample size: 24,000 surveys were expected to be completed. 
+3. Target population: Volunteers in the listed CMAs (including Saint John, Montreal, Toronto, etc, full list on site). 
+4. Sampling frame: Landline and cellular telephone numbers from the Cencsus and other Stats Canada sources. Numbers were grouped if they were associated with the same address. Aged 15 or older, 1 randomly selected member from any given household. 
+5. Survey mode(s): telephone and self-completed via online questionnarie
+6. Timeline: for 2018, this survey was administered from September to December.
+7. Response rate: 41.9%
+8. Weights: Weights were applied via a weighting factor that was applied at the person-level. Bootstrap weights were used.
+9. Data processing: I believe I cover this in the rest of the points.
+10. Cleaning, imputation, etc: Data was 'cleaned' to check integrity. This included checking birth date with age. imputation was done on the dataset, in 9 steps. These steps included imputing personal and family income, the formal volunteering variables, and variables associated with donation and solicitation methods. 
+11. Sources of error: Imperfect coverage (differences in target and sample population, making your survey non-representative of the target population, such as people without a phone or internet) and non-response (people that don't respond to the survey, for example people that have very busy schedules like those with many children will end up missing from the datasets)
+12. Limitations, known biases, etc: Those without a phone or internet would not be represented in the survey. Those from the same dwelling would not be surveyed, which could induce or remove bias depending on how you look at it. 
+13. Link to documentation and any additional sources used: https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&amp;SDDS=4430, https://www23.statcan.gc.ca/imdb/p3Instr.pl?Function=assembleInstr&a=1&&lang=en&Item_Id=1183690 
 ```
 
 ## Rubric
